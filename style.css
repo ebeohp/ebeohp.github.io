@@ -2,12 +2,20 @@
     margin: 0;
     padding: 0;
 }
-.newest{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 200;
-    font-family: "Do Hyeon", monospace;
-    text-decoration: none;
+#construction{
+    background: repeating-linear-gradient(
+        30deg,
+        yellow 0px,
+        yellow 40px,
+        black 40px,
+        black 80px
+      );
+      color: red;
+      text-align: center;
+      font-weight: 800;
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
 }
 
 h1{
@@ -31,31 +39,35 @@ body{
     margin: 100px;
 }
 #footer{
-    background-color: greenyellow;
+    background: linear-gradient(90deg,#2B074D, rgb(82, 207, 82), #2B074D);
     color: black;
     padding: 10px 0;
     margin: 100px;
     text-align: center;
+    float: down;
 }
-ul{
+nav ul{
     text-align: center;
     font-size: 25px;
     font-weight: 800;
 }
-ul li{
+nav ul li{
    list-style: none;
    display: inline-block;
    line-height: 10px;
   
 }
-ul li a{
+nav ul li:hover{
+    background-color: grey;
+}
+nav ul li a{
     display: block;
     text-decoration: none;
     font-family: monospace;
     color:aqua;
     padding: 0 50px;
 }
-ul li a:hover{
+nav ul li a:hover{
     color: white;
     text-decoration: none;
 }
@@ -72,7 +84,11 @@ ul li a:hover{
     margin: auto;
 }
 .newest{
-    
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    font-family: "Do Hyeon", monospace;
+    text-decoration: none;
     padding: 10px 0 10px 0;
     font-size: 40px;
     
@@ -80,27 +96,89 @@ ul li a:hover{
 .newest:hover{
     color: yellow;
 }
+#gr{
+    padding:30px 100px 200px 100px;
+    background-color: rgb(212, 0, 212);
+}
+#ln{
+    padding:30px 100px 200px 100px;
+    background-color: lawngreen;
+}
+#aj{
+    padding:30px 100px 200px 100px;
+    background-color: aqua; 
+}
+
+
+.sidenav {
+    height: 400px; /* Full-height: remove this if you want "auto" height */
+    width: 260px; /* Set the width of the sidebar */
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+    right: 150;
+    background-color: yellow; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 10px 0;
+    margin: 50px 0;
+  }
+  
+  /* The navigation menu links */
+  .sidenav h3{
+      font-family: 'Caveat', sans-serif;
+      font-size: 35px;
+      padding: 0 0 0 30px;
+  }
+  .sidenav a {
+    padding: 0px 8px 0 35px;
+    text-decoration: none;
+    font-family: 'Caveat', sans-serif;
+    font-size: 25px;
+    color: black;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #8400ff;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
 #article-content{
-    background-color: rgb(139, 247, 255);
+    background-color: white;
     font-size: 14px;
-    font-color: black;
-    padding: 20px 20px 20px;
+    padding: 20px ;
 }
 #wrapper{
     width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 100px;
+    margin-right: 500px;
 }
 #article-header{
-    background-color: rgb(238, 255, 0);
-    color: blue;
-    font-size: 25px;
-    font-family: Geneva, Tahoma, sans-serif;
-    text-align: center;
-    padding: 35px 5px;
-    height: 20px;
+    background-color: mediumblue;
+    color: magenta;
+    font-size: 100px;
+    font-family: Caveat, sans-serif;
+    font-weight: 80px;
+    margin-left: 200px;
+    padding: 0px 0 150px 5px;
+    height: 0px;
     width: 100%;
     margin-bottom: 10px;
+}
+.header-img{
+    width: 20%;
+    height:20%;
+    padding: 0 10px;
 }
 .post{
     background-color: white;
@@ -108,11 +186,19 @@ ul li a:hover{
     border: 5px solid black;
     margin-bottom: 5px;
 }
+.post h2{
+    font-family: 'Arvo', Times, serif;
+    padding: 20px 0 0 40px;
+    font-size: 45px;
+}
+.post time{
+    padding: 0 40px;
+}
 .post p{
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-bottom: 10px;
-    font-size: 20px;
-    padding: 10px 20px;
+    font-size: 18px;
+    padding: 20px 40px;
 }
 .post p:last-child{
     margin-bottom: 0;
