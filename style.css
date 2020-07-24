@@ -139,6 +139,7 @@ nav ul li a:hover{
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
     color: #8400ff;
+    transform: scale(1.1);
   }
   
   /* Style page content */
@@ -202,4 +203,14 @@ nav ul li a:hover{
 }
 .post p:last-child{
     margin-bottom: 0;
+}
+/*BLOG ^*/
+/*Game stuff below*/
+.DuckTreeGame{
+    width: 650px;
+    height: 650px;
+}
+.RecyclWGame{
+    width: 850px;
+    height: 650px;
 }
