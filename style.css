@@ -113,12 +113,12 @@ nav ul li a:hover{
 .sidenav {
     height: 400px; /* Full-height: remove this if you want "auto" height */
     width: 260px; /* Set the width of the sidebar */
-    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
-    right: 150;
+     /* Fixed Sidebar (stay in place on scroll) */
+    float: right;
     background-color: yellow; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding: 10px 0;
-    margin: 50px 0;
+    margin: 50px 100px;
   }
   
   /* The navigation menu links */
@@ -128,10 +128,10 @@ nav ul li a:hover{
       padding: 0 0 0 30px;
   }
   .sidenav a {
-    padding: 0px 8px 0 35px;
+    padding: 0px 8px 10px 35px;
     text-decoration: none;
-    font-family: 'Caveat', sans-serif;
-    font-size: 25px;
+    font-family: 'Times New Roman',sans-serif;
+    font-size: 15px;
     color: black;
     display: block;
   }
@@ -157,7 +157,7 @@ nav ul li a:hover{
 #article-content{
     background-color: white;
     font-size: 14px;
-    padding: 20px ;
+    padding: 0px ;
 }
 #wrapper{
     width: 800px;
@@ -181,6 +181,7 @@ nav ul li a:hover{
     height:20%;
     padding: 0 10px;
 }
+
 .post{
     background-color: white;
     padding: 5px;
@@ -202,15 +203,26 @@ nav ul li a:hover{
     padding: 20px 40px;
 }
 .post p:last-child{
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
-/*BLOG ^*/
+.blog1-img{
+    padding: 10px 60px;
+    
+}
+.blog2-img{
+    transform: scale(.8);
+    position: relative;
+    right: 20px;
+}
+
 /*Game stuff below*/
 .DuckTreeGame{
+    border: none;
     width: 650px;
     height: 650px;
 }
 .RecyclWGame{
+    border: none;
     width: 850px;
     height: 650px;
 }
