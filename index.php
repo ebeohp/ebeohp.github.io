@@ -9,26 +9,14 @@
         </head>
             <body>
                 <div id = "container">
-                    <div id = "header">
-                        <h1>jupiterFrog</h1>
-                    </div>
+                    <?php
+                        include "res/header.php";
+                    ?>
          
                     <div id = "content">
-                    
-                        <div id = "nav text-center">
-                            <h2>
-                                <nav>
-                                    <ul>
-                                        <li><a href= "index.html">Home</a></li>
-                                        <li><a href= "about.html">About</a></li>
-                                        <li><a href= "allGames.html">All-Games</a></li>
-                                        <li><a href= "blog.html">Blog</a></li>
-                                    </ul>
-                          
-                                </nav>
-                            </h2>
-                       
-                        </div>
+                        <?php
+                            include "res/nav.php";
+                        ?>
                         <div id  = "main">
                      
                             <img class = "img-fluid homegif" src = "images/home.gif">
@@ -44,9 +32,12 @@
                         </div>
                     
                
-                    <div id = "footer"> 
+                    <!--<div id = "footer"> 
                     &copy 2020 jupiterFrog.
-                    </div>
+                    </div>-->
+                    <?php
+                        include "res/footer.php";
+                    ?>
 
                 </div>
         
