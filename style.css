@@ -2,24 +2,12 @@
     margin: 0;
     padding: 0;
 }
-#construction{
-    background: repeating-linear-gradient(
-        30deg,
-        yellow 0px,
-        yellow 40px,
-        black 40px,
-        black 80px
-      );
-      color: red;
-      text-align: center;
-      font-weight: 800;
-      font-size: 20px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-}
 
 h1{
     font-size: 40px;
+}
+h2{
+    font-family: monospace, sans-serif;
 }
 nav{
     width: 100%;
@@ -27,19 +15,22 @@ nav{
 }
 body{
     background-color: #2B074D;
-    font-family: "Lucida Console", monospace;
+    
 }
 #header{
     color: greenyellow;
     text-align: center;
     padding: 40px 0 10px 0;
+    font-family: "Fredoka One", sans-serif;
 }
 #main{
     color: white;
     margin: 100px;
+    font-family: Arvo, "sans-serif";
+    text-align: center;
 }
 #footer{
-    background: linear-gradient(90deg,#2B074D, rgb(82, 207, 82), #2B074D);
+    background: linear-gradient(90deg,#2B074D, rgb(156, 245, 55), #2B074D);
     color: black;
     padding: 10px 0;
     margin: 100px;
@@ -54,12 +45,22 @@ nav ul{
 nav ul li{
    list-style: none;
    display: inline-block;
-   line-height: 10px;
+   border-radius: 5px;
+   line-height: 50px;
+   background-color: grey;
   
 }
 nav ul li:hover{
-    background-color: grey;
+    animation-name: tabhover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
+@keyframes tabhover{
+    100%{
+        background-color: greenyellow
+    }
+}
+
 nav ul li a{
     display: block;
     text-decoration: none;
@@ -71,44 +72,27 @@ nav ul li a:hover{
     color: white;
     text-decoration: none;
 }
-.img-fluid{
-    position: relative;
-    bottom: 110px;
-    max-width: 100%;
-    max-height: 100%;
+.intro{
+    background-color: rgb(58, 0, 151);
+    padding: 20px 50px;
 }
-.homegif{
-    display: block;
-    width: 600px;
-    height: 430px;
-    margin: auto;
+.intro img{
+    width: 22%;
+    height: 35%;
 }
-.newest{
-    text-align: center;
-    font-size: 30px;
-    font-weight: 200;
-    font-family: "Do Hyeon", monospace;
-    text-decoration: none;
-    padding: 10px 0 10px 0;
-    font-size: 40px;
+.roles-container{
+    display: grid;
+    padding: 20px 00px;
     
+    grid-template-columns: 100px 200px 200px 200px;
+    grid-template-areas:
+        "nothing ta cs kslb"
+        "text tainfo csinfo kslbinfo"
+        "text2 myta mycs mykslb"
 }
-.newest:hover{
-    color: yellow;
+.tac{
+    grid-area: ta;
 }
-#gr{
-    padding:30px 100px 200px 100px;
-    background-color: rgb(212, 0, 212);
-}
-#ln{
-    padding:30px 100px 200px 100px;
-    background-color: lawngreen;
-}
-#aj{
-    padding:30px 100px 200px 100px;
-    background-color: aqua; 
-}
-
 
 .sidenav {
     height: 400px; /* Full-height: remove this if you want "auto" height */
