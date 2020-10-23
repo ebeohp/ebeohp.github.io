@@ -46,8 +46,8 @@ nav ul li{
    list-style: none;
    display: inline-block;
    border-radius: 5px;
-   line-height: 50px;
-   background-color: grey;
+   line-height: 30px;
+   background-color: rgb(245, 201, 8);
   
 }
 nav ul li:hover{
@@ -57,7 +57,7 @@ nav ul li:hover{
 }
 @keyframes tabhover{
     100%{
-        background-color: greenyellow
+        background-color: rgb(255, 115, 0);
     }
 }
 
@@ -65,7 +65,7 @@ nav ul li a{
     display: block;
     text-decoration: none;
     font-family: monospace;
-    color:aqua;
+    color: white;
     padding: 0 50px;
 }
 nav ul li a:hover{
@@ -73,26 +73,15 @@ nav ul li a:hover{
     text-decoration: none;
 }
 .intro{
-    background-color: rgb(58, 0, 151);
+    background-color: rgb(45, 212, 176);
     padding: 20px 50px;
 }
 .intro img{
     width: 22%;
     height: 35%;
 }
-.roles-container{
-    display: grid;
-    padding: 20px 00px;
-    
-    grid-template-columns: 100px 200px 200px 200px;
-    grid-template-areas:
-        "nothing ta cs kslb"
-        "text tainfo csinfo kslbinfo"
-        "text2 myta mycs mykslb"
-}
-.tac{
-    grid-area: ta;
-}
+
+/*Blog page*/
 
 .sidenav {
     height: 400px; /* Full-height: remove this if you want "auto" height */
@@ -199,6 +188,37 @@ nav ul li a:hover{
     right: 20px;
 }
 
+/*Projects page*/
+.gridOfGames{
+    font-size: 20px;
+    width: 960px;
+    color: yellow;
+    font-family: Roboto, monospace;
+    text-align: center;
+    margin: 80px;
+    
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px;
+    grid-gap: 20px 30px;
+}
+.gridOfGames img{
+    width: 250px; 
+    margin: 20px 0 0 0;
+}
+.gridOfGames :any-link{
+    text-decoration: none;
+    color: yellow;
+}
+.gridOfGames :hover{
+    color: black;
+}
+
+.d1{background:LightSkyBlue;}
+.d2{background:LightSalmon;}
+.d3{background:rgb(23, 202, 202);}
+.d4{background:LightPink;}
+
 /*Game stuff below*/
 .DuckTreeGame{
     border: none;
@@ -209,4 +229,7 @@ nav ul li a:hover{
     border: none;
     width: 850px;
     height: 650px;
+}
+.ItsyGame{
+    
 }
